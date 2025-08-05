@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36327.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KebabGGbab.Tracking", "src\KebabGGbab.Tracking.csproj", "{42234A7E-8577-B8DE-9148-376EC0D90D76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KebabGGbab.Tracking.Test", "test\KebabGGbab.Tracking.Test.csproj", "{B4F266F4-930D-693D-3EA2-E3DE8E651EAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42234A7E-8577-B8DE-9148-376EC0D90D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42234A7E-8577-B8DE-9148-376EC0D90D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42234A7E-8577-B8DE-9148-376EC0D90D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42234A7E-8577-B8DE-9148-376EC0D90D76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F266F4-930D-693D-3EA2-E3DE8E651EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F266F4-930D-693D-3EA2-E3DE8E651EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F266F4-930D-693D-3EA2-E3DE8E651EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F266F4-930D-693D-3EA2-E3DE8E651EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F14D9113-A2A6-458B-98CA-E95E0570C0AC}
+	EndGlobalSection
+EndGlobal
