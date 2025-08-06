@@ -27,7 +27,10 @@
 
 			if (disposing)
 			{
-				_observers.Remove(_observer);
+				if (_observers != null && _observer != null)
+				{
+					_observers.Remove(_observer);
+				}
 			}
 
 			_disposed = true;

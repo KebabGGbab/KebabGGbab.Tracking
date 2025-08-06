@@ -26,5 +26,28 @@ namespace KebabGGbab.Tracking
 
 			return services;
 		}
+
+		public static IServiceCollection AddTracking<T>(this IServiceCollection services, object key)
+		{
+			return services.AddTracking<T>(options: new TrackingOptions(), key: key);
+		}
+
+		public static IServiceCollection AddTracking<T>(this IServiceCollection services, TrackingOptions options, object key)
+		{
+			ArgumentNullException.ThrowIfNull(services, nameof(services));
+			ArgumentNullException.ThrowIfNull(key, nameof(key));
+
+			services.TryAddKeyedSingleton<Trackable<T>>(key, (s, o) => new Trackable<T>(options));
+			services.TryAddKeyedTransient<Tracker<T>>(key, (s, o) =>
+			{
+				Tracker<T> tracker = new();
+				Trackable<T> trackable = s.GetRequiredKeyedService<Trackable<T>>(key);
+				tracker.Subscribe(trackable);
+
+				return tracker;
+			});
+
+			return services;
+		}
 	}
 }
